@@ -1,5 +1,6 @@
 import './modules/principal-page.js'
 import './modules/first-page.js'
 import './modules/second-page.js'
-import './modules/third-page.js'
+import './modules/change-img.js'
 import './modules/fourth-page.js'
+import './modules/table-componen.js'

@@ -6,10 +6,10 @@ export class fourPage extends LitElement {
         return html`
         <h1>Tercer Filtro<h1>
         <div class="container">
-        <button class="button" id="one"> primer ejercicio</button>
-        <button class="button" id="dos"> segundo ejercicio</button>
-        <button class="button" id="tres"> tercer ejercicio</button>
-        <button class="button" id="cuatro"> cuarto ejercicio</button>
+        <button class="button" id="page-one"> primer ejercicio</button>
+        <button class="button" id="image-gallery"> segundo ejercicio</button>
+        <button class="button" id="dinamic-table"> tercer ejercicio</button>
+        <button class="button" id="api-data-list"> cuarto ejercicio</button>
         </div>
         `}
 
@@ -17,7 +17,7 @@ export class fourPage extends LitElement {
             const buttonDiv=this.shadowRoot.querySelector('.container')
             buttonDiv.addEventListener('click',(e)=>{
                 const button=e.target.closest('.button')
-                const newPage =`<page-${button.id}></page-${button.id}>`
+                const newPage =`<${button.id}></${button.id}>`
                 this.parentNode.insertAdjacentHTML('beforeend',newPage)
                 this.parentNode.removeChild(this)
             })
