@@ -46,15 +46,16 @@ export class changepictures extends LitElement {
                 const pastId=this.id
                 if(value['img']===pastId){
 
-                    const Nkey =(parseInt(key)+1)
-                    this.nextimg(Nkey)
+                    this.key =(parseInt(key)+1)
 
                 }
 
-        })})
+            }
+        )})
+        this.nextimg()
     }
-    nextimg(key){
-        this.id=imgs[key]["img"]
+    nextimg(){
+        this.id=imgs[this.key]["img"]
         this.requestUpdate()
     }
 

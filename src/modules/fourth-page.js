@@ -37,7 +37,7 @@ export class fourPage extends HTMLElement {
   
     renderList(data) {
       const listContainer = this.shadowRoot.getElementById('list-container');
-      listContainer.innerHTML = data;
+      listContainer.innerHTML = `<div>hola</div>`;
       data.forEach(item => {
         const listItem = document.createElement('div');
         listItem.className = 'list-item';
