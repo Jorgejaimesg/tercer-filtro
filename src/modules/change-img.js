@@ -50,9 +50,9 @@ export class changepictures extends LitElement {
 
                 }
 
+                this.nextimg()
             }
         )})
-        this.nextimg()
     }
     nextimg(){
         this.id=imgs[this.key]["img"]
